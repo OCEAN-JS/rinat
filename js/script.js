@@ -1,5 +1,12 @@
-function hello(){
-    document.querySelector("#alert").style.display = "block";
-    document.querySelector("#alert").innerHTML = "  " + document.querySelector("#name").value ;
+const submitButton = document.querySelector('.submitButton');
+
+const hello = () => {
+  const alertMessage = document.querySelector(".alert");
+  alertMessage.style.display = "block";
+  const name = document.querySelector("#name");
+  alertMessage.innerHTML = name.value;
 }
-alert ("My first web code in Sololearn")
+
+submitButton.addEventListener('click', hello);
+
+console.log("My first web code in Sololearn");

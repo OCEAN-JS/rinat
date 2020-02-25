@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    
-    <link href="css/styles.css" rel="stylesheet">
-    <script src="js/script.js"></script>
-  </head>
-  <body>
-    <h1>Design Your Name</h1>
 
-    <button onclick="hello()">submit</button>
-    <input id="name" type="input" placeholder="enter your First name" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
 
-    <div id="alert"></div>
-    <div>CO-CO-CO</div>
-  </body>
+<body>
+  <h1>Design Your Name</h1>
+
+  <div class="enterName">
+    <label for="name">Enter your first name:</label>
+    <input id="name" type="input" placeholder="John Doe">
+    <button class="submitButton">submit</button>
+  </div>
+
+  <div class="alert hidden"></div>
+  <div class="shit">CO-CO-CO</div>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
